@@ -1,0 +1,17 @@
+# Dependencies
+node_modules
+esc-app/node_modules
+
+# Production
+dist
+esc-app/dist
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local archives
+*.zip
+*.tar.gz

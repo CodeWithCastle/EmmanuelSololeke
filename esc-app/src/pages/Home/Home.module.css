@@ -1,0 +1,321 @@
+.home {
+  width: 100%;
+}
+
+/* 1. Hero Landing */
+.landing {
+  min-height: min(92vh, 900px);
+  padding-top: 120px;
+  padding-bottom: 3rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.landingContent {
+  color: #fff;
+  max-width: 780px;
+  padding: 1.5rem;
+  text-align: center;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.landingTitle {
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.landingDetail {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+.landingBtn button {
+  padding: 12px 28px;
+  font-size: 1.1rem;
+}
+
+/* 2. About Snippet */
+.aboutUs {
+  padding: 5rem 0;
+  background-color: #fff;
+}
+
+.aboutFlex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.aboutImg {
+  width: 100%;
+  min-height: 420px;
+  background-position: center;
+  background-size: cover;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  mask-image: linear-gradient(270deg, transparent 0%, black 15%);
+  -webkit-mask-image: linear-gradient(270deg, transparent 0%, black 15%);
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.aboutTitle {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  color: #111;
+  font-weight: 700;
+}
+
+.aboutDetail {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: #444;
+}
+
+/* 3. Services Preview */
+.services {
+  padding: 5rem 0;
+  background-color: #f8f8f8;
+}
+
+.servicesContent {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.sectionHead {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.sectionTitle {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  color: #111;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.sectionHeadDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.sectionDetail {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.serviceCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.serviceCard {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardContent {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 1.5rem;
+}
+
+.cardIcon {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.cardBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.cardDetail {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.cardButton {
+  align-self: flex-start;
+  padding: 8px 22px;
+  background: #fff;
+  color: var(--accent);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 0 3px 0 var(--accent-light);
+  transition: all 0.3s ease;
+}
+
+.cardButton:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* 4. Annual Section */
+.annual {
+  background-color: #333;
+  color: #fff;
+  padding: 4rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.annualContainer {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+  min-height: 420px;
+}
+
+.annualBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  z-index: 2;
+}
+
+.annualTitle {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 700;
+  color: #fff;
+}
+
+.annualDetail {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #e0e0e0;
+  font-weight: 400;
+}
+
+.annualImgWrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.annualImg {
+  max-width: 280px;
+  transform: rotate(15deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  transition: transform 0.4s ease;
+}
+
+.annualImg:hover {
+  transform: rotate(5deg) scale(1.05);
+}
+
+/* 5. Ideal Section */
+.ideal {
+  padding: 5rem 0;
+  background-color: #f8f8f8;
+}
+
+.idealContent {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.idealCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.idealCard {
+  border-radius: 15px;
+}
+
+.idealCardWhite {
+  background-color: #fff !important;
+  background-image: none !important;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 992px) {
+  .aboutFlex {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .aboutImg {
+    min-height: 300px;
+  }
+
+  .serviceCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .annualContainer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .annualImgWrapper {
+    margin-top: 1rem;
+  }
+
+  .annualImg {
+    max-width: 220px;
+    transform: rotate(5deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sectionHead {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .serviceCards {
+    grid-template-columns: 1fr;
+  }
+
+  .idealCards {
+    grid-template-columns: 1fr;
+  }
+}

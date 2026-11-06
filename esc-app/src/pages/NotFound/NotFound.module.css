@@ -1,0 +1,35 @@
+.notFound {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 1rem;
+  background-color: #fff;
+}
+
+.inner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.code {
+  font-size: clamp(4rem, 10vw, 7rem);
+  font-weight: 900;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.title {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: #222;
+}
+
+.detail {
+  font-size: 1.15rem;
+  color: #666;
+  max-width: 500px;
+}

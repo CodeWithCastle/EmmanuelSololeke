@@ -1,0 +1,248 @@
+.footer {
+  width: 100%;
+  padding: 2rem 0 1rem 0;
+  color: black;
+}
+
+.footer :global(.content) {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Contact Us Lane */
+.contactusLane {
+  width: 100%;
+  padding: 1rem 0;
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid #f8f8f8;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.contactusLaneOpen {
+  display: block;
+  opacity: 1;
+}
+
+/* Show when targeted via hash */
+.contactusLane:target {
+  display: block;
+  opacity: 1;
+}
+
+.contactusBox {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.contactusHeader {
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactusTitle {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.contactusRemove {
+  height: 30px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: red;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.contactusRemove:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.contactusBody {
+  min-height: 140px;
+  border-radius: 16px;
+  background-color: #f8f8f8;
+}
+
+/* Company Lane */
+.companyLane {
+  min-height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+.footerLogo {
+  position: sticky;
+  top: 140px;
+  height: 70px;
+  width: auto;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+}
+
+/* Links Lane */
+.linksLane {
+  min-height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+.linkBox {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.linkTitle {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+.linkList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  color: black;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: var(--accent, #2f9c04);
+}
+
+/* Address Lane */
+.addressLane {
+  min-height: 50px;
+  width: 100%;
+}
+
+.addressBox {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.addressLocation {
+  width: clamp(220px, 100%, 720px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.addressTitle {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+.addressList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 6px;
+  flex-wrap: nowrap;
+  width: 100%;
+  color: black;
+  text-transform: capitalize;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.item img {
+  height: 14px;
+  width: auto;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+/* Copyright Lane */
+.copyrightLane {
+  width: 100%;
+  min-height: 50px;
+  border-top: 3px solid var(--accent, #2f9c04);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #666;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media screen and (max-width: 768px) {
+  .linksLane {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .linkBox {
+    width: calc((100% / 3) - 0.7rem);
+  }
+
+  .addressBox {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .addressLocation {
+    width: calc(50% - 0.5rem);
+  }
+
+  .copyrightLane {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .linksLane {
+    gap: 1.5rem;
+  }
+
+  .linkBox {
+    width: calc(50% - 0.75rem);
+  }
+
+  .addressLocation {
+    width: 100%;
+  }
+}

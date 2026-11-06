@@ -1,0 +1,188 @@
+.propertiesPage {
+  width: 100%;
+}
+
+.listingsSection {
+  padding: 4rem 0 6rem 0;
+  background-color: #f8f8f8;
+}
+
+.filterBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.filterBtn {
+  padding: 8px 20px;
+  background: #fff;
+  border-radius: 20px;
+  color: #444;
+  font-size: 0.95rem;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
+}
+
+.filterBtn:hover {
+  background: #eaeaea;
+  color: #111;
+}
+
+.filterBtnActive {
+  background: var(--accent) !important;
+  color: #fff !important;
+  box-shadow: 0 4px 10px rgba(47, 156, 4, 0.35);
+}
+
+.countText {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  text-align: right;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2rem;
+}
+
+.propertyCard {
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.propertyCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+}
+
+.propertyImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.propertyCard:hover .propertyImage {
+  transform: scale(1.05);
+}
+
+.badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.badgeSale {
+  background-color: var(--accent);
+}
+
+.badgeLease {
+  background-color: #007bff;
+}
+
+.cardDetails {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  flex: 1;
+}
+
+.priceTag {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.propertyTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.35;
+}
+
+.locationRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.locIcon {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+
+.propertyDesc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  flex: 1;
+}
+
+.specsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+  padding: 0.75rem 0;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.inquireBtn {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}
+
+.inquireBtn button {
+  padding: 8px 20px;
+  font-size: 0.9rem;
+}
+
+.noResults {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem 1rem;
+  background: #fff;
+  border-radius: 12px;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
