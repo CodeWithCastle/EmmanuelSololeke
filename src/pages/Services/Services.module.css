@@ -1,0 +1,215 @@
+.servicesPage {
+  width: 100%;
+}
+
+/* Intro Section */
+.introSection {
+  padding: var(--space-16) 0 var(--space-8) 0;
+  background-color: var(--color-white);
+}
+
+.introContent {
+  max-width: var(--measure-prose);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.kicker {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  letter-spacing: 0.08em;
+}
+
+.sectionHeading {
+  font-size: clamp(1.85rem, 3.5vw, 2.35rem);
+  color: var(--color-text-heading);
+  line-height: var(--leading-tight);
+}
+
+.introText {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-body);
+}
+
+/* Services List Stack */
+.servicesListSection {
+  padding: var(--space-8) 0 var(--space-20) 0;
+  background-color: var(--color-white);
+}
+
+.servicesStack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.serviceCard {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-10);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+}
+
+.serviceCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(47, 156, 4, 0.4);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.serviceNumber {
+  font-size: var(--text-3xl);
+  font-weight: 900;
+  color: var(--color-primary);
+  background: var(--color-primary-subtle);
+  border: 1px solid rgba(47, 156, 4, 0.25);
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cardHeaderInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.serviceSubtitle {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-primary-dark);
+}
+
+.serviceTitle {
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  font-weight: 800;
+  color: var(--color-text-heading);
+  line-height: var(--leading-snug);
+}
+
+.serviceDesc {
+  font-size: var(--text-base);
+  line-height: var(--leading-loose);
+  color: var(--color-text-body);
+  max-width: 900px;
+}
+
+.deliverablesBox {
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  max-width: 900px;
+}
+
+.deliverablesHeading {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.deliverablesList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2) var(--space-6);
+}
+
+.deliverablesList li {
+  position: relative;
+  padding-left: var(--space-5);
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+  color: var(--color-text-body);
+}
+
+.deliverablesList li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--color-primary);
+  font-weight: 800;
+  font-size: var(--text-sm);
+}
+
+.cardAction {
+  margin-top: var(--space-2);
+}
+
+/* Bottom CTA */
+.bottomCtaSection {
+  padding: 0 0 var(--space-20) 0;
+  background-color: var(--color-white);
+}
+
+.ctaBox {
+  background: #0f172a;
+  color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-12) var(--space-10);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  box-shadow: var(--shadow-xl);
+}
+
+.ctaTitle {
+  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+  font-weight: 800;
+  color: var(--color-white);
+}
+
+.ctaText {
+  font-size: var(--text-base);
+  color: #cbd5e1;
+  max-width: 600px;
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-2);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .serviceCard {
+    padding: var(--space-6);
+  }
+
+  .cardHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+
+  .deliverablesList {
+    grid-template-columns: 1fr;
+  }
+}
