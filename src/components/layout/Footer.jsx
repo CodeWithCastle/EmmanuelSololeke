@@ -6,6 +6,8 @@ import locationIcon from '../../assets/icons/location.png'
 import mailIcon from '../../assets/icons/mail.png'
 import phoneIcon from '../../assets/icons/phone.png'
 
+const currentYear = new Date().getFullYear()
+
 function Footer() {
   const [formData, setFormData] = useState({
     name: '',
@@ -268,7 +270,7 @@ function Footer() {
           {/* 4. Bottom Copyright */}
           <div className={styles.bottomBar}>
             <p className={styles.copyrightText}>
-              &copy; {new Date().getFullYear()} Emmanuel Sololeke Consulting. All rights reserved.
+              &copy; {currentYear} Emmanuel Sololeke Consulting. All rights reserved.
             </p>
             <p className={styles.regulatoryText}>
               Chartered Estate Surveyors &amp; Valuers | Registered with NIESV &amp; ESVARBON
