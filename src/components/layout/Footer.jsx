@@ -262,7 +262,7 @@ function Footer() {
                 </div>
                 <div className={styles.officeDetail}>
                   <img src={phoneIcon} alt="" className={styles.officeIcon} />
-                  <a href="tel:+2348136273359">08136273359</a>
+                  <a href="tel:+2348136273359">+234 813 627 3359</a>
                 </div>
               </div>
 
