@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import styles from './Header.module.css'
 import escLogo from '../../assets/img/esc_logo.png'
@@ -6,12 +6,37 @@ import escLogo from '../../assets/img/esc_logo.png'
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [dropdownOpen, setDropdownOpen] = useState(false)
+  const timeoutRef = useRef(null)
   const location = useLocation()
 
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current)
+    }
+    setDropdownOpen(true)
+  }
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setDropdownOpen(false)
+    }, 180)
+  }
+
   const closeMenu = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current)
+    }
     setMenuOpen(false)
     setDropdownOpen(false)
   }
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current)
+      }
+    }
+  }, [])
 
   const isAboutActive =
     location.pathname === '/about' ||
@@ -38,8 +63,8 @@ function Header() {
           {/* About Dropdown */}
           <div
             className={styles.dropdownWrapper}
-            onMouseEnter={() => setDropdownOpen(true)}
-            onMouseLeave={() => setDropdownOpen(false)}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
           >
             <Link
               to="/about"
