@@ -17,24 +17,34 @@
 
 .catBtn {
   padding: 8px 20px;
-  background: #fff;
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
   border-radius: 20px;
-  color: #444;
+  color: #444444;
   font-size: 0.95rem;
   font-weight: 600;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   transition: all 0.25s ease;
+  cursor: pointer;
 }
 
 .catBtn:hover {
   background: #eaeaea;
-  color: #111;
+  color: #111111;
+  border-color: #cbd5e1;
 }
 
 .catBtnActive {
-  background: var(--accent) !important;
-  color: #fff !important;
-  box-shadow: 0 4px 10px rgba(47, 156, 4, 0.35);
+  background: #f0fdf4 !important;
+  color: #000000 !important;
+  border-color: var(--color-primary, #2f9c04) !important;
+  box-shadow: 0 4px 10px rgba(47, 156, 4, 0.25);
+  font-weight: 700;
+}
+
+.catBtnActive:hover {
+  background: #e2f9e7 !important;
+  color: #000000 !important;
 }
 
 .grid {
@@ -69,7 +79,7 @@
 .catBadge {
   font-size: 0.8rem;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--color-primary, #2f9c04);
   background: rgba(47, 156, 4, 0.1);
   padding: 4px 12px;
   border-radius: 20px;
@@ -109,7 +119,7 @@
 }
 
 .readMoreLink {
-  color: var(--accent);
+  color: var(--color-primary, #2f9c04);
   font-weight: 600;
   transition: color 0.2s ease;
 }

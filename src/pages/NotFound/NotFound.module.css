@@ -18,7 +18,7 @@
 .code {
   font-size: clamp(4rem, 10vw, 7rem);
   font-weight: 900;
-  color: var(--accent);
+  color: var(--color-primary, #2f9c04);
   line-height: 1;
 }
 

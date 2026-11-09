@@ -10,6 +10,8 @@
   --color-primary-light: #3ac403;
   --color-primary-subtle: #f0fdf4;
   --color-secondary: #0284c7;
+  --accent: #2f9c04;
+  --accent-light: #3ac403;
 
   /* High-Contrast Solid Gradients */
   --gradient-primary: linear-gradient(135deg, #2f9c04 0%, #1e6d02 100%);
