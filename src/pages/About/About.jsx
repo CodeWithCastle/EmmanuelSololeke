@@ -3,53 +3,6 @@ import { useLocation } from 'react-router-dom'
 import SectionHero from '../../components/ui/SectionHero.jsx'
 import styles from './About.module.css'
 import aboutBgd from '../../assets/img/bgd/aboutus_bgd.avif'
-import emmanuelImg from '../../assets/img/team/emmanuel_adeleke.jpg'
-import userIcon from '../../assets/icons/user.png'
-
-const personnelData = [
-  {
-    name: 'Mr. Emmanuel Adeleke',
-    role: 'Principal Consultant & Lead Partner',
-    qualifications: 'FNIESV, RSV, IVSC Certified',
-    bio: 'Oversees strategic management, major institutional valuation portfolios, and regulatory compliance across all branch operations with nearly a decade of chartered experience.',
-    img: emmanuelImg,
-  },
-  {
-    name: 'Mr. Olukunle Olaniyan',
-    role: 'Partner — Valuation & Project Advisory',
-    qualifications: 'ANIESV, RSV',
-    bio: 'Co-leads nationwide commercial valuations, corporate asset profiling, and technical assessment committees across financial and public sectors.',
-    img: userIcon,
-  },
-  {
-    name: 'Mr. Auwal Musa',
-    role: 'Partner — Agency & Regional Operations',
-    qualifications: 'ANIESV, RSV',
-    bio: 'Heads operations across Jos, Gombe, and northern territories specializing in commercial real estate investment appraisals and property disposal.',
-    img: userIcon,
-  },
-  {
-    name: 'Mrs. Abigail Jatau',
-    role: 'Head of Operations & Administration',
-    qualifications: 'Admin & Client Services Lead',
-    bio: 'Directs administrative workflows, corporate client relations, and operational coordination across our four office locations.',
-    img: userIcon,
-  },
-  {
-    name: 'Mr. Domshak Dawesh',
-    role: 'Senior Valuation Surveyor & Field Analyst',
-    qualifications: 'ANIESV, RSV',
-    bio: 'Specialist in comprehensive building surveys, physical asset verifications, and regional agricultural/industrial appraisals.',
-    img: userIcon,
-  },
-  {
-    name: 'Miss. Blessing Oyero',
-    role: 'Estate Consultant & Leasing Coordinator',
-    qualifications: 'Estate Surveyor & Valuer',
-    bio: 'Manages property portfolios, tenant onboarding, lease negotiations, and client satisfaction protocols.',
-    img: userIcon,
-  },
-]
 
 function About() {
   const { hash } = useLocation()
@@ -87,9 +40,7 @@ function About() {
               Valuers with offices in Jos (Plateau State), Abuja (FCT), Lagos (Lagos State),
               and Gombe (Gombe State). We are recognized and registered as a practicing
               firm by the Estate Surveyors and Valuers Registration Board of Nigeria (ESVARBON)
-              and affiliated with the Nigerian Institution of Estate Surveyors and Valuers (NIESV),
-              the International Valuation Standards Council (IVSC), and the South African
-              Institute of Valuers (SAIV).
+              and affiliated with the Nigerian Institution of Estate Surveyors and Valuers (NIESV).
             </p>
           </div>
 
@@ -189,41 +140,7 @@ function About() {
         </div>
       </section>
 
-      {/* 4. Key Personnel */}
-      <section className={styles.personnelSection} id="personnels">
-        <div className="content">
-          <div className={styles.personnelIntroBlock}>
-            <span className={styles.kicker}>Leadership</span>
-            <h2 className={styles.sectionHeading}>Key Personnel &amp; Leadership</h2>
-            <p className={styles.personnelSubtitle}>
-              Our key partners and senior consultants are complemented by fifty-five
-              other qualified surveyors, analysts, and administrative staff across Nigeria.
-            </p>
-          </div>
-
-          <div className={styles.personnelGrid}>
-            {personnelData.map((person, index) => (
-              <div key={index} className={`card ${styles.personCard}`}>
-                <div className={styles.personPhotoWrapper}>
-                  <img
-                    src={person.img}
-                    alt={person.name}
-                    className={styles.personPhoto}
-                  />
-                </div>
-                <div className={styles.personDetails}>
-                  <h3 className={styles.personName}>{person.name}</h3>
-                  <span className={styles.personRole}>{person.role}</span>
-                  <span className={styles.personQual}>{person.qualifications}</span>
-                  <p className={styles.personBio}>{person.bio}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 5. Join Us CTA */}
+      {/* 4. Join Us CTA */}
       <section className={styles.joinUsSection}>
         <div className="content">
           <div className={styles.joinUsCard}>

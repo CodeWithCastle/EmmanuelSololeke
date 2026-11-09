@@ -1,5 +1,5 @@
 import SectionHero from '../../components/ui/SectionHero.jsx'
-import styles from '../About/About.module.css'
+import styles from './Partners.module.css'
 import aboutBgd from '../../assets/img/bgd/aboutus_bgd.avif'
 import emmanuelImg from '../../assets/img/team/emmanuel_adeleke.jpg'
 import userIcon from '../../assets/icons/user.png'
@@ -27,18 +27,19 @@ const partnersList = [
 
 function Partners() {
   return (
-    <div className={styles.aboutPage}>
+    <div className={styles.partnersPage}>
       <SectionHero
         backgroundImage={aboutBgd}
-        title="about us | meet our partners"
+        title="Meet Our Partners"
         id="partners-hero"
       />
 
-      <section className={styles.personnels}>
+      <section className={styles.partnersSection}>
         <div className="content">
-          <div className={styles.personnelHead}>
-            <h3 className={styles.sectionTopic}>Our Partners</h3>
-            <p className={styles.personnelIntro}>
+          <div className={styles.headerBlock}>
+            <span className={styles.kicker}>Leadership</span>
+            <h2 className={styles.heading}>Our Partners</h2>
+            <p className={styles.leadText}>
               Our firm is spearheaded by accomplished Partners with extensive
               distinction in estate surveying, valuation, and asset advisory.
               Together, they combine decades of leadership registered with NIESV
@@ -46,24 +47,20 @@ function Partners() {
             </p>
           </div>
 
-          <div className={styles.personnelList}>
+          <div className={styles.partnersGrid}>
             {partnersList.map((partner, idx) => (
-              <div key={idx} className={`card ${styles.personnelItem}`}>
-                <div className={styles.personnelImgWrapper}>
+              <div key={idx} className={`card ${styles.partnerCard}`}>
+                <div className={styles.photoWrapper}>
                   <img
                     src={partner.img}
                     alt={partner.name}
-                    className={styles.personnelImg}
+                    className={styles.photo}
                   />
                 </div>
-                <div className={styles.personnelContent}>
-                  <div className={styles.personnelInfo}>
-                    <strong style={{ display: 'block', marginBottom: '4px', color: '#fff' }}>
-                      {partner.title}
-                    </strong>
-                    {partner.info}
-                  </div>
-                  <h4 className={styles.personnelName}>{partner.name}</h4>
+                <div className={styles.details}>
+                  <h3 className={styles.name}>{partner.name}</h3>
+                  <span className={styles.titleBadge}>{partner.title}</span>
+                  <p className={styles.bio}>{partner.info}</p>
                 </div>
               </div>
             ))}
@@ -71,17 +68,19 @@ function Partners() {
         </div>
       </section>
 
-      <section className={styles.joinus}>
+      <section className={styles.joinSection}>
         <div className="content">
-          <h3 className={styles.sectionTopic}>Partner with us</h3>
-          <p className={styles.joinusText}>
-            We welcome corporate alliances, institutional co-advisory, and strategic
-            partnerships nationwide. Reach out to collaborate on high-impact real estate
-            engagements.
-          </p>
-          <a href="#contactus">
-            <button className="action-btn">contact our partners</button>
-          </a>
+          <div className={styles.joinCard}>
+            <h2 className={styles.joinTitle}>Partner With Us</h2>
+            <p className={styles.joinText}>
+              We welcome corporate alliances, institutional co-advisory, and strategic
+              partnerships nationwide. Reach out to collaborate on high-impact real estate
+              engagements.
+            </p>
+            <a href="#contactus">
+              <button className="action-btn">Contact Our Partners</button>
+            </a>
+          </div>
         </div>
       </section>
     </div>

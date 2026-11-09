@@ -24,7 +24,7 @@ const servicesList = [
     title: 'Asset Valuation & Strategic Advisory',
     subtitle: 'NIESV & ESVARBON Certified Appraisals',
     description:
-      'Our valuation practice prepares authoritative appraisal reports conforming to the Nigerian Institution of Estate Surveyors and Valuers and International Valuation Standards (IVSC). We appraise land, buildings, plant, machinery, furniture, and ongoing business assets for corporate, financial, and statutory purposes.',
+      'Our valuation practice prepares authoritative appraisal reports conforming to the standards of the Nigerian Institution of Estate Surveyors and Valuers (NIESV) and the Estate Surveyors and Valuers Registration Board of Nigeria (ESVARBON). We appraise land, buildings, plant, machinery, furniture, and ongoing business assets for corporate, financial, and statutory purposes.',
     deliverables: [
       'Mortgage security appraisals for commercial banks & lenders',
       'Financial reporting, balance sheet & IFRS compliance valuations',
