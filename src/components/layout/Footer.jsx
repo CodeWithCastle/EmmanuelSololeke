@@ -50,6 +50,12 @@ function Footer() {
                 Whether you require professional asset valuation, facility management,
                 or property acquisition advisory, our chartered surveyors are ready to assist.
               </p>
+              <p className={styles.contactEmailBanner}>
+                Corporate Email:{' '}
+                <a href="mailto:info@emmanuelsololekecon.com" className={styles.contactEmailLink}>
+                  info@emmanuelsololekecon.com
+                </a>
+              </p>
             </div>
 
             {submitted ? (
@@ -176,6 +182,10 @@ function Footer() {
                 <span>NIESV Registered</span>
                 <span>ESVARBON Certified</span>
               </div>
+              <div className={styles.bioContact}>
+                <img src={mailIcon} alt="" className={styles.officeIcon} />
+                <a href="mailto:info@emmanuelsololekecon.com">info@emmanuelsololekecon.com</a>
+              </div>
             </div>
 
             {/* Links Columns */}
@@ -234,6 +244,10 @@ function Footer() {
                 </div>
                 <div className={styles.officeDetail}>
                   <img src={mailIcon} alt="" className={styles.officeIcon} />
+                  <a href="mailto:info@emmanuelsololekecon.com">info@emmanuelsololekecon.com</a>
+                </div>
+                <div className={styles.officeDetail}>
+                  <img src={mailIcon} alt="" className={styles.officeIcon} />
                   <a href="mailto:sololeke@yahoo.com">sololeke@yahoo.com</a>
                 </div>
                 <div className={styles.officeDetail}>
@@ -249,6 +263,10 @@ function Footer() {
                   <span>5 Oladejo Street, off Olusosun Bus Stop, Kudirat Abiola Rd, Oregun, Lagos</span>
                 </div>
                 <div className={styles.officeDetail}>
+                  <img src={mailIcon} alt="" className={styles.officeIcon} />
+                  <a href="mailto:info@emmanuelsololekecon.com">info@emmanuelsololekecon.com</a>
+                </div>
+                <div className={styles.officeDetail}>
                   <img src={phoneIcon} alt="" className={styles.officeIcon} />
                   <a href="tel:+2348093949347">+234 809 394 9347</a>
                 </div>
@@ -261,6 +279,10 @@ function Footer() {
                   <span>Suite B41, Danziya Plaza, Opp. NNPC Mega Station, Central Business District, Abuja</span>
                 </div>
                 <div className={styles.officeDetail}>
+                  <img src={mailIcon} alt="" className={styles.officeIcon} />
+                  <a href="mailto:info@emmanuelsololekecon.com">info@emmanuelsololekecon.com</a>
+                </div>
+                <div className={styles.officeDetail}>
                   <img src={phoneIcon} alt="" className={styles.officeIcon} />
                   <a href="tel:+2348136273359">+234 813 627 3359</a>
                 </div>
@@ -271,6 +293,10 @@ function Footer() {
                 <div className={styles.officeDetail}>
                   <img src={locationIcon} alt="" className={styles.officeIcon} />
                   <span>Suite 4, Jubilee Complex, Behind Jubilee Hotel, Biu Road, Gombe State</span>
+                </div>
+                <div className={styles.officeDetail}>
+                  <img src={mailIcon} alt="" className={styles.officeIcon} />
+                  <a href="mailto:info@emmanuelsololekecon.com">info@emmanuelsololekecon.com</a>
                 </div>
                 <div className={styles.officeDetail}>
                   <img src={phoneIcon} alt="" className={styles.officeIcon} />
