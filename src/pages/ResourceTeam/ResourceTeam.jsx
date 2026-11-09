@@ -25,7 +25,7 @@ const resourceTeam = [
   {
     name: 'Technical Advisory Unit',
     role: 'Valuation & Research Associates',
-    info: 'A dedicated team of fifty-five certified surveyors delivering continuous market assessments and technical reports.',
+    info: 'A dedicated team of certified surveyors delivering continuous market assessments and technical reports.',
     img: userIcon,
   },
 ]
@@ -45,7 +45,7 @@ function ResourceTeam() {
             <span className={styles.kicker}>Support &amp; Operations</span>
             <h2 className={styles.heading}>Resource Team</h2>
             <p className={styles.leadText}>
-              Our key partners are backed by a dynamic team of over 55 qualified
+              Our key partners are backed by a dynamic team of qualified
               estate surveyors, technical analysts, and dedicated support staff
               stationed across our offices in Jos, Abuja, Lagos, and Gombe.
             </p>
