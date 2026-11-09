@@ -244,7 +244,7 @@ function Footer() {
                 </div>
                 <div className={styles.officeDetail}>
                   <img src={mailIcon} alt="" className={styles.officeIcon} />
-                  <a href="mailto:info@emmanuelsololekecon.com">info@emmanuelsololekecon.com</a>
+                  <a href="mailto:info.jos@emmanuelsololekecon.com">info.jos@emmanuelsololekecon.com</a>
                 </div>
                 <div className={styles.officeDetail}>
                   <img src={mailIcon} alt="" className={styles.officeIcon} />
@@ -264,7 +264,7 @@ function Footer() {
                 </div>
                 <div className={styles.officeDetail}>
                   <img src={mailIcon} alt="" className={styles.officeIcon} />
-                  <a href="mailto:info@emmanuelsololekecon.com">info@emmanuelsololekecon.com</a>
+                  <a href="mailto:info.lagos@emmanuelsololekecon.com">info.lagos@emmanuelsololekecon.com</a>
                 </div>
                 <div className={styles.officeDetail}>
                   <img src={phoneIcon} alt="" className={styles.officeIcon} />
@@ -280,7 +280,7 @@ function Footer() {
                 </div>
                 <div className={styles.officeDetail}>
                   <img src={mailIcon} alt="" className={styles.officeIcon} />
-                  <a href="mailto:info@emmanuelsololekecon.com">info@emmanuelsololekecon.com</a>
+                  <a href="mailto:info.abuja@emmanuelsololekecon.com">info.abuja@emmanuelsololekecon.com</a>
                 </div>
                 <div className={styles.officeDetail}>
                   <img src={phoneIcon} alt="" className={styles.officeIcon} />
@@ -296,7 +296,7 @@ function Footer() {
                 </div>
                 <div className={styles.officeDetail}>
                   <img src={mailIcon} alt="" className={styles.officeIcon} />
-                  <a href="mailto:info@emmanuelsololekecon.com">info@emmanuelsololekecon.com</a>
+                  <a href="mailto:info.gombe@emmanuelsololekecon.com">info.gombe@emmanuelsololekecon.com</a>
                 </div>
                 <div className={styles.officeDetail}>
                   <img src={phoneIcon} alt="" className={styles.officeIcon} />
